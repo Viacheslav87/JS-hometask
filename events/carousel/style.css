@@ -1,0 +1,65 @@
+body {
+  padding:10px;}
+
+.arrow {
+  padding: 0;
+  background: rgb(243, 211, 124);
+  border-radius: 15px;
+  border: 1px solid rgb(209, 166, 142);
+  font-size: 24px;
+  line-height: 24px;
+  color: rgba(104, 102, 16, 0.582);
+  display: block;
+  position: absolute;
+  top : 60px;
+}
+
+.arrow:focus {
+  outline: none;
+}
+
+.arrow:hover {
+  background: rgb(236, 133, 48);
+  cursor: pointer;
+}
+.prev{
+  left: 7px;
+}
+.next{
+  right: 7px;
+}
+.gallery { 
+  width :390px; 
+  overflow : hidden;}
+
+ .gallery ul {
+  height: 130px;
+  width: 9999px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  font-size: 0;
+  transition: margin-left 250ms;
+  
+}
+
+.carousel img {
+  width: 130px;
+  height: 130px;
+  display: block; /* убираем пустое место вокруг картинок */
+}
+
+.gallery li {
+  display: inline-block;
+  
+   /* убираем пустое место между элементами списка */
+}
+
+.carousel {
+      border: 1px solid #ccc;
+      background-color: wheat;
+      border-radius: 15px;
+      width: 400px;
+      position: absolute;
+      padding: 10px 40px;
+      }
