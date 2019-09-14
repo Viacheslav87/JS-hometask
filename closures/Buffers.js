@@ -10,7 +10,7 @@ function makeBuffer() {
   
   };
   
-  var buffer = makeBuffer();
+  let buffer = makeBuffer();
   
   // добавить значения к буферу
   buffer('Замыкания');
@@ -21,7 +21,7 @@ function makeBuffer() {
   alert( buffer() ); // Замыкания Использовать Нужно!
   //Буфер должен преобразовывать все данные к строковому типу:
   
-  var buffer = makeBuffer();
+  let buffer = makeBuffer();
   buffer(0);
   buffer(1);
   buffer(0);
@@ -43,11 +43,11 @@ function makeBuffer() {
       phrase += value }
     return phrase;
    };
-  buffer.clear = function(){phrase= "";}
-  return buffer
+  buffer.clear = function(){phrase= "";} 
+  return buffer // здесь забыл поставить return buffer
   };
   
-  var buffer = makeBuffer();
+  let buffer = makeBuffer();
   
   // добавить значения к буферу
   buffer('Замыкания');
@@ -58,7 +58,7 @@ function makeBuffer() {
   alert( buffer() ); // Замыкания Использовать Нужно!
   //Буфер должен преобразовывать все данные к строковому типу:
   
-  var buffer = makeBuffer();
+  let buffer = makeBuffer();
   buffer(0);
   buffer(1);
   buffer(0);
